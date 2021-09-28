@@ -1,0 +1,37 @@
+.flex-container{
+    display: flex;
+    border : 2px solid grey;
+    height : 45vh;
+    /* flex-direction: row-reverse; row; column; column-reverse; */
+    justify-content: space-evenly;
+    /* justify-content: flex-end; center; flex-start; space-evenly; space-between; space-around; */
+    /* align-items: center; flex-start; flex-end; */
+    /* flex-wrap: wrap; wrap-reverse; */
+    /* flex-flow: prop:flex-direction prop:flex-wrap */
+    /* flex-flow: column wrap; */
+}
+.flex-item{
+    background-color : red;
+    margin : 20px;
+    border : 2px solid black;
+    width: 122px;
+    height: 122px;
+}
+
+.item1{
+    order :5;
+    /* Max Order at last */
+    flex-grow: 0;
+    /* Max Grow has largest width for row */
+}
+
+.item2{
+    order : 3;
+    flex-shrink: 3;
+    /* This item will shrink first while lowering size as it has maximum shrink capability */
+}
+
+.item3 {
+    align-self: center;
+    /* This will now have its own rule for alignment and will not follow its flex box */
+}
